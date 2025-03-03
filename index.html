@@ -8,38 +8,171 @@ I have also not made my work available to anyone else.
 
     <head>
         <title> Zac Belal Lab 1 </title>
+
+        
         <style> 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            padding: 20px;
             line-height: 1.6;
+            color: white;
         }
         h1 {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 80px;
+            margin-top:0px;
+            margin-bottom:10px;
+            color:white;
         }
         h2 {
-            font-family: 'Times New Roman', Times, serif;
-            border-top: 2px black solid;
-            padding-top: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 60px;
+            margin-bottom:5px;
+            margin-top: 0px;
         }
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+        }
+        .navbar a {
+            float: left;
+            color: gray;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: lightblue;
+            color: black;
+        }
+        .navbar a.active {
+            background-color:lightskyblue;
+            color: black;
+            display: block;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .section {
+            display:none;
+        }
+        .section:target {
+            display: block;
+            padding-top:70px;
+        }
+       .welcome {
+            display:block;
+            padding-top: 70px;
+        }
+        body:has(:target) .welcome {
+            display: none;
+        }
+        .welcome #aboutmecontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #aboutme #aboutmecontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #education #educationcontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #experience #experiencecontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         </style>
 
     </head>
 
-    <body style="background-color:#a9a9a9">
-        <h1><img src="mcmaster-logo-2024-col.jpg" width="100" height="100"/>&emsp;<i>Zac Belal</i></h1>
-        <p><small>Email: belalz@mcmaster.ca &emsp;&emsp;&emsp;&emsp; LinkedIn: <a href="http://www.linkedin.com/in/zac-belal-80b761221">http://www.linkedin.com/in/zac-belal-80b761221</a></small></p> 
-        
-        <h2><u>Education</u></h2> 
-            <p><b>McMaster University,</b> Hamilton Ontario | <i>Sept 2021 - Jan 2026</i><br>
-                <i>Bachelor of Technology, Automation Engineering Technology</i><ul>
-                <li> Will be awarded with a Bachelor of Technology in Automation Degree, a Chemical Engineering Technology Advanced Diploma, and a Business Management Certificate. </li>
-                <li> Achieved a cumulative grade point average of ~3.3 on a 4-point scale. </li>
+    <body style="background-color:black">
+
+        <div class="navbar">
+        <a href="#aboutme">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skillsandprojects">Skills & Projects</a>
+        </div>
+
+    <div class="welcome">
+        <div id="aboutmecontent">
+            <h1>ABOUT ME</h1>
+            <img  src="Me.jpg" width="20%" height="20%" /><br>
+            <h2><b>ZAC BELAL</b></h2>
+            <p style="margin-left: 300px; margin-right: 300px; text-align: center;">
+                I am a 4th year Automation Engineering Technology student at McMaster University. I specialize in smart systems, IoT-enabled control systems, and system & process design.
+                However I take alot of pride in my activities outside of school as well, I am much more than just an average student at my school as I am also a very creative, open minded,
+                out of the box thinker who can do alot more than just solve equations or do assignments in a classroom. This website will give you a good insight into who I am as not only a student,
+                or an engineer, but also a person.
             </p>
-            </ul>
-            <p style="padding-top: 20px"><b>T.A. Blakelock Public School</b>: T.A. Blakelock Public School </p>
-        </ul>
-        <h2><u>Work Experience</u></h2>
+            <p style="text-align: center;">
+                <small>Email: belalz@mcmaster.ca</small><br>
+                <small>LinkedIn: <a href="http://www.linkedin.com/in/zac-belal-80b761221">http://www.linkedin.com/in/zac-belal-80b761221</a></small>
+            </p>
+        </div>
+    </div>
+
+    <div id="aboutme" class="section">
+        <div id="aboutmecontent">
+            <h1>ABOUT ME</h1>
+            <img  src="Me.jpg" width="20%" height="20%" /><br>
+            <h2><b>ZAC BELAL</b></h2>
+            <p style="margin-left: 300px; margin-right: 300px; text-align: center;">
+                I am a 4th year Automation Engineering Technology student at McMaster University. I specialize in smart systems, IoT-enabled control systems, and system & process design.
+                However I take alot of pride in my activities outside of school as well, I am much more than just an average student at my school as I am also a very creative, open minded,
+                out of the box thinker who can do alot more than just solve equations or do assignments in a classroom. This website will give you a good insight into who I am as not only a student,
+                or an engineer, but also a person.
+            </p>
+            <p style="text-align: center;">
+                <small>Email: belalz@mcmaster.ca</small><br>
+                <small>LinkedIn: <a href="http://www.linkedin.com/in/zac-belal-80b761221">http://www.linkedin.com/in/zac-belal-80b761221</a></small>
+            </p>
+        </div>
+    </div>
+
+    <div id="education" class="section">
+        <div id="educationcontent">
+            <h1>EDUCATION</h1> 
+            <img  src="mcmaster-logo-2024-col.jpg" width="20%" height="20%" /><br>
+                <p style="color:lightgray; border-top: white solid 2px; text-align: center; font-size:12px">
+                    <b style="font-size:25px; color:white">McMaster University</b><br>
+                      Hamilton Ontario <br>
+                   <i>Sept 2021 - Jan 2026<br>
+                    Bachelor of Technology, Automation Engineering Technology</i>
+                    <ul style="list-style-position:inside; text-align:center">
+                    <li> Will be awarded with a Bachelor of Technology in Automation Degree,<br>
+                         a Chemical Engineering Technology Advanced Diploma,<br>
+                         and a Business Management Certificate.</li>
+                    <li style="margin-top:10px"> Achieved a cumulative grade point average of ~3.3 on a 4-point scale. </li>
+                    </ul>
+                </p>
+                <p style="color:lightgray; border-top: white solid 2px; text-align: center; font-size:12px">
+                    <b style="font-size:25px; color:white">T.A. Blakelock Public School</b><br>
+                       Oakville Ontario<br>
+                       <i>2017 - 2021</i> 
+                </p>
+        </div>
+    </div>
+
+
+    <div id="experience" class="section">
+        <div id="experiencecontent">
+        <h1>EXPERIENCE</h1>
         <p><b><i>Electrical & Automation Technician CO-OP</i></b><br>
         <small>ANUBIS 3D, R&D Division | 4 Months</small></p> <ul>
             <li> Designed and assembled lightweight EOAT for FANUC robots with Fusion 360 and SLS 3D printing to create pneumatic IoT-enabled EOAT control systems. </li>
@@ -61,6 +194,12 @@ I have also not made my work available to anyone else.
             <li>Ensuring that customer service skills and the customer’s experience are top priorities makes sales easier to close and upsells easier to sell.</li>
             <li><a style="color: red" href="https://decorepair.com/">Visit Deco Repair</a></li>
         </ul>
+        </div>
+    </div>
+
+
+
+    <div id="skillsandprojects" class="section">
             <h2><u>Hobbies</u></h2>
         <p>Hobbies</p> <ol>
             <li><b>Making Music:</b> Me and a friend make music together and release it on platforms like spotify, youtube, and apple music. I have 10 years of piano experience and make all of our beats which we then record on. <a style="color: red" href="https://Linktr.ee/ZXC_">Heres a link</a></li>
@@ -76,9 +215,11 @@ I have also not made my work available to anyone else.
         <p>Clubs</p> <ol>
             <li><b>Competitions:</b> I am currently not in any clubs but am proactive about joining competitions aimed at engineering students, such as a Hard Hat competition I am currently in, and the M-Factor Competition.</li>
         </ol>
+        </div>
+    
 
         <footer>
-            <p Style="border-top: 2px black solid">&copy Zac Belal</p>
+            <p style="float:right;">&copy Zac Belal</p>
         </footer>
     </body>
 </html>
