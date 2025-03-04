@@ -95,6 +95,16 @@ I have also not made my work available to anyone else.
             align-items: center;
             justify-content: center;
         }
+        #experience #experiencecontent span:hover {
+            background-color: lightblue;
+            color: black;
+        }
+        #skillsandprojects #skillsandprojectscontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
         </style>
 
@@ -114,7 +124,7 @@ I have also not made my work available to anyone else.
             <h1>ABOUT ME</h1>
             <img  src="Me.jpg" width="20%" height="20%" /><br>
             <h2><b>ZAC BELAL</b></h2>
-            <p style="margin-left: 300px; margin-right: 300px; text-align: center;">
+            <p style="max-width: 80%; text-align: center;">
                 I am a 4th year Automation Engineering Technology student at McMaster University. I specialize in smart systems, IoT-enabled control systems, and system & process design.
                 However I take alot of pride in my activities outside of school as well, I am much more than just an average student at my school as I am also a very creative, open minded,
                 out of the box thinker who can do alot more than just solve equations or do assignments in a classroom. This website will give you a good insight into who I am as not only a student,
@@ -132,7 +142,7 @@ I have also not made my work available to anyone else.
             <h1>ABOUT ME</h1>
             <img  src="Me.jpg" width="20%" height="20%" /><br>
             <h2><b>ZAC BELAL</b></h2>
-            <p style="margin-left: 300px; margin-right: 300px; text-align: center;">
+            <p style="max-width: 80%; text-align: center;">
                 I am a 4th year Automation Engineering Technology student at McMaster University. I specialize in smart systems, IoT-enabled control systems, and system & process design.
                 However I take alot of pride in my activities outside of school as well, I am much more than just an average student at my school as I am also a very creative, open minded,
                 out of the box thinker who can do alot more than just solve equations or do assignments in a classroom. This website will give you a good insight into who I am as not only a student,
@@ -154,11 +164,11 @@ I have also not made my work available to anyone else.
                       Hamilton Ontario <br>
                    <i>Sept 2021 - Jan 2026<br>
                     Bachelor of Technology, Automation Engineering Technology</i>
-                    <ul style="list-style-position:inside; text-align:center">
+                    <ul style="list-style-position:inside; text-align:center; line-height:1.2">
                     <li> Will be awarded with a Bachelor of Technology in Automation Degree,<br>
                          a Chemical Engineering Technology Advanced Diploma,<br>
                          and a Business Management Certificate.</li>
-                    <li style="margin-top:10px"> Achieved a cumulative grade point average of ~3.3 on a 4-point scale. </li>
+                    <li style="margin-top:15px"> Achieved a cumulative grade point average of ~3.3 on a 4-point scale. </li>
                     </ul>
                 </p>
                 <p style="color:lightgray; border-top: white solid 2px; text-align: center; font-size:12px">
@@ -172,52 +182,86 @@ I have also not made my work available to anyone else.
 
     <div id="experience" class="section">
         <div id="experiencecontent">
-        <h1>EXPERIENCE</h1>
-        <p><b><i>Electrical & Automation Technician CO-OP</i></b><br>
-        <small>ANUBIS 3D, R&D Division | 4 Months</small></p> <ul>
-            <li> Designed and assembled lightweight EOAT for FANUC robots with Fusion 360 and SLS 3D printing to create pneumatic IoT-enabled EOAT control systems. </li>
-            <li> Managed R&D projects funded by the <b>NRC Industrial Research Assistance Program (IRAP).</b> </li>
-            <li> Developed IoT-enabled demonstration projects for trade shows using Arduino. </li>
-            <li><a style="color: red" href="https://anubis3d.com/">Visit ANUBIS 3D</a></li>
-        </ul>
-        <p style="padding-top: 20px"><b><i>Automation & Control Engineer CO-OP</i></b><br>
-        <small>K-Factor Filter, Automation Control Division | 4 Months</small> <ul>
-            <li>Assembled control panels and designed ladder logic for PLC controlled pump and filter systems.</li>
-            <li>In field experience assembling and setting up filter systems in an industrial factory environment.</li>
-            <li>Optimized design related R&D projects aimed at lowering material usage and cost.</li>
-            <li><a style="color: red" href="https://kfactorfilter.com/">Visit K-Factor Filter</a></li>
-        </ul>
-        <p style="padding-top: 20px"><b><i>Sales Representative</i></b><br>
-        <small>Deco Repair, Sales Division | 4 Months</small></p> <ul>
-            <li>operating and managing all day-to-day functions of my location independently including sales, repairs, customer service & retention, and location management.</li>
-            <li>Accomplished an average upsell rate of 80% and doing <b>over $5000 in sales within first few weeks.</b></li>
-            <li>Ensuring that customer service skills and the customer’s experience are top priorities makes sales easier to close and upsells easier to sell.</li>
-            <li><a style="color: red" href="https://decorepair.com/">Visit Deco Repair</a></li>
-        </ul>
+            <h1>EXPERIENCE</h1>
+
+        
+            <img src="anubis3d.png" width="20%" height="20%" /><br>
+            <a style="font-size:25px; color:white; text-decoration:none" href="https://anubis3d.com/">
+            <span>ANUBIS 3D</a></span>
+
+            <p style="border-top: white solid 2px; text-align: center;">
+                <b>Electrical & Automation Technician CO-OP</b><br>
+                <small style="color:lightgray; text-align: center; font-size:12px">
+                ANUBIS 3D, R&D Division | 4 Months</small>
+            </p>
+
+            <ul style="list-style-position:inside; text-align:center; line-height:1.2">
+                <li> Designed and assembled lightweight EOAT for FANUC robots with Fusion 360 and SLS 3D printing to create pneumatic IoT-enabled EOAT control systems. </li>
+                <li style="margin-top:15px"> Managed R&D projects funded and supported by the <b>NRC Industrial Research Assistance Program </b>(IRAP). </li>
+                <li style="margin-top:15px"> Developed IoT-enabled demonstration projects for trade shows using Arduino. </li>
+            </ul>
+        
+
+        
+            <img style="margin-top:50px" src="Kfactor.png" width="20%" height="20%" /><br>
+            <a style="font-size:25px; color:white; text-decoration:none" href="https://kfactorfilter.com/">
+            <span>K Factor Filter</span></a>
+
+            <p style="border-top: white solid 2px; text-align: center;">
+                <b>Automation & Control Engineer CO-OP</b><br>
+                <small style="color:lightgray; text-align: center; font-size:12px">
+                K-Factor Filter, Automation Control Division | 4 Months</small>
+            </p>
+
+            <ul style="list-style-position:inside; text-align:center; line-height:1.2">
+                <li>Assembled control panels and designed ladder logic for PLC controlled pump and filter systems.</li>
+                <li style="margin-top:15px">In field experience assembling and setting up filter systems in an industrial factory environment.</li>
+                <li style="margin-top:15px">Optimized design related R&D projects aimed at lowering material usage and cost.</li>
+            </ul>
+        
+            <img style="margin-top:50px" src="Deco.png" width="20%" height="20%" /><br>
+            <a style="font-size:25px; color:white; text-decoration:none" href="https://decorepair.com/">
+            <span>Deco Windshield Repair</span></a>
+
+            <p style="border-top: white solid 2px; text-align: center;">
+                <b>Sales Representative</b><br>
+                <small>Deco Repair, Sales Division | 4 Months</small>
+            </p> 
+            
+            <ul style="list-style-position:inside; text-align:center; line-height:1.2">
+                <li>operating and managing all day-to-day functions of my location independently including sales, repairs, customer service & retention, and location management.</li>
+                <li style="margin-top:15px">Accomplished an average upsell rate of 80% and doing <b>over $5000 in sales within first few weeks.</b></li>
+                <li style="margin-top:15px">Ensuring that customer service skills and the customer’s experience are top priorities makes sales easier to close and upsells easier to sell.</li>
+            </ul>
         </div>
     </div>
 
 
 
     <div id="skillsandprojects" class="section">
-            <h2><u>Hobbies</u></h2>
-        <p>Hobbies</p> <ol>
+        <div id="skillsandprojectscontent">
+            <h1>Hobbies</h1>
+        
+        <p style="border-bottom: white solid 2px; font-size:25px; color:white;">Hobbies</p> 
+        <ol style="max-width: 80%; list-style-position:inside; text-align:center; line-height:1.2">
             <li><b>Making Music:</b> Me and a friend make music together and release it on platforms like spotify, youtube, and apple music. I have 10 years of piano experience and make all of our beats which we then record on. <a style="color: red" href="https://Linktr.ee/ZXC_">Heres a link</a></li>
             <li><b>Streaming:</b> Lately me and the same friend have been streaming to try to drive engagement for our music.</li>
         </ol>
-        <p>Interests</p> <ol>
+        <p style="border-bottom: white solid 2px; font-size:25px; color:white;">Interests</p> 
+        <ol style="max-width: 80%; list-style-position:inside; text-align:center; line-height:1.2">
             <li><b>Music:</b> You may have been able to guess one of my interests is music. Not only do I make it but I love exploring different types of music and exposing myself to different genres.</li>
             <li><b>Technology:</b> I have a passion for technology and love innovation and creating new things, especially when it involves technology.</li>
         </ol>
-        <p>Professional Associations</p> <ol>
+        <p style="border-bottom: white solid 2px; font-size:25px; color:white;">Professional Associations</p>
+        <ol style="max-width: 80%; list-style-position:inside; text-align:center; line-height:1.2">
             <li><b>Royal Conservatory:</b> Yup you might have been able to guess, another music thing. This is the organisation that I got all of my music education from. Although I dont attend anymore I was with them for about 10 years.</li>
         </ol>
-        <p>Clubs</p> <ol>
+        <p style="border-bottom: white solid 2px; font-size:25px; color:white;">Clubs</p> 
+        <ol style="max-width: 80%; list-style-position:inside; text-align:center; line-height:1.2">
             <li><b>Competitions:</b> I am currently not in any clubs but am proactive about joining competitions aimed at engineering students, such as a Hard Hat competition I am currently in, and the M-Factor Competition.</li>
         </ol>
         </div>
-    
-
+    </div>
         <footer>
             <p style="float:right;">&copy Zac Belal</p>
         </footer>
